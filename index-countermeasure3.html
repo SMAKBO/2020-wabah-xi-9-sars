@@ -48,29 +48,10 @@ body, html {
     <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
-    <a href="#home" class="w3-bar-item w3-button">HOME</a>
-    <div class="w3-dropdown-hover">
-      <button class="w3-button w3-hide-small"><i class="fa fa-info"></i> ABOUT VIRUS <i class="fa fa-caret-down"></i></button>
-      <div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="index-virus1.html" class="w3-bar-item w3-button">SARS dan Gejala</a>
-        <a href="index-virus2.html" class="w3-bar-item w3-button">Pencegahan dan Pengobatan</a>
-      </div>
-    </div><div class="w3-dropdown-hover">
-      <button class="w3-button w3-hide-small"><i class="fa fa-globe"></i> SPREAD <i class="fa fa-caret-down"></i></button>
-      <div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="index-spread1.html" class="w3-bar-item w3-button">Asal Mula</a>
-        <a href="index-spread2.html" class="w3-bar-item w3-button">Penyebaran</a>
-        <a href="index-spread3.html" class="w3-bar-item w3-button">Peta Kasus Penyebaran</a>
-      </div>
-    </div>
-    <div class="w3-dropdown-hover">
-      <button class="w3-button w3-hide-small"><i class="fa fa-plus-square"></i> COUNTERMEASURES <i class="fa fa-caret-down"></i></button>
-      <div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="index-countermeasure1.html" class="w3-bar-item w3-button">Peran Pemerintah</a>
-        <a href="index-countermeasure2.html" class="w3-bar-item w3-button">Kesadaran Masyarakat</a>
-        <a href="index-countermeasure3.html" class="w3-bar-item w3-button">Action Plan</a>
-      </div>
-    </div>
+    <a href="index-home.html" class="w3-bar-item w3-button">HOME</a>
+    <a href="index-virus.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-info"></i> ABOUT VIRUS</a>
+    <a href="index-spread.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-globe"></i> SPREAD</a>
+    <a href="#counter" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-plus-square"></i> COUNTERMEASURES</a>
     <a href="index-contact.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> CONTACT US</a>
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
       <i class="fa fa-search"></i>
@@ -79,28 +60,9 @@ body, html {
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <div class="w3-dropdown-hover">
-      <button class="w3-button">ABOUT VIRUS<i class="fa fa-caret-down"></i></button>
-      <div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="index-virus1.html" class="w3-bar-item w3-button">SARS dan Gejala</a>
-        <a href="index-virus2.html" class="w3-bar-item w3-button">Pencegahan dan Pengobatan</a>
-      </div>
-    </div><div class="w3-dropdown-hover">
-      <button class="w3-button">SPREAD <i class="fa fa-caret-down"></i></button>
-      <div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="index-spread1.html" class="w3-bar-item w3-button">Asal Mula</a>
-        <a href="index-spread2.html" class="w3-bar-item w3-button">Penyebaran</a>
-        <a href="index-spread3.html" class="w3-bar-item w3-button">Peta Kasus Penyebaran</a>
-      </div>
-    </div>
-    <div class="w3-dropdown-hover">
-      <button class="w3-button">COUNTERMEASURES <i class="fa fa-caret-down"></i></button>
-      <div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="index-countermeasure1.html" class="w3-bar-item w3-button">Peran Pemerintah</a>
-        <a href="index-countermeasure2.html" class="w3-bar-item w3-button">Kesadaran Masyarakat</a>
-        <a href="index-countermeasure3.html" class="w3-bar-item w3-button">Action Plan</a>
-      </div>
-    </div>
+    <a href="index-virus.html" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT VIRUS</a>
+    <a href="index-spread.html" class="w3-bar-item w3-button" onclick="toggleFunction()">SPREAD</a>
+    <a href="#counter" class="w3-bar-item w3-button" onclick="toggleFunction()">COUNTERMEASURES</a>
     <a href="index-contact.html" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT US</a>
     <a href="#" class="w3-bar-item w3-button">SEARCH</a>
   </div>
@@ -117,16 +79,22 @@ body, html {
 <div class="w3-content w3-container w3-padding-64" id="about">
   <b><h2 class="w3-text-blue-gray">Action Plan</h2></b>
   <hr>
-  <div class="w3-center w3-padding-large">
-      <img src="counter4.jpeg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="SARS Virus" width="500" height="333">
-  </div>
   <ol style="font-size:20px">
     <li><h4>Pencatatatan data penumpang transit</h4></li>
-        <p style="font-size: 15px">Penumpang transit maupun bukan transit akan dicatat nama, umur, jenis kelamin, alamat, dan pekerjaannya. Lalu, diserahkan kepada Dinas Kesehatan Kabupaten/Kota tempat tujuan perjalanannya serta diberikan Kartu Kewaspadaan Kesehatan.</p>
+    <div class="w3-center w3-padding-large">
+      <img src="counterx.jpeg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="SARS Virus" width="500" height="333">
+     </div>
+        <p style="font-size: 15px">Penumpang transit maupun bukan transit akan dicatat nama, umur, jenis kelamin, alamat, dan pekerjaannya. Lalu, diserahkan kepada Dinas Kesehatan Kabupaten/Kota tempat tujuan perjalanannya serta diberikan Kartu Kewaspadaan Kesehatan. Hal ini bertujuan untuk mempermudah penelusuran jika terjadi hal yang tak diinginkan</p>
     <li><h4>Pemenuhan kebutuhan pokok masyarakat</h4></li>
-        <p style="font-size: 15px">Pemenuhan kebutuhan pokok masyarakat melalui bantuan tunai dan nontunai dengan tujuan stay at home sehingga dapat meminimalisir penyebaran wabah SARS. Hal ini butuh koordinasi para kepala daerah, dimulai dari tingkat Rt/Rw dengan mendata kepala keluarga (KK) setempat lalu diserahkan kepada kelurahan. Data di kelurahan akan diserahkan ke kecamatan untuk diproses lebih lanjut sehingga data tersebut dapat sampai ke pemerintah kota/provinsi/pusat.</p>
+      <div class="w3-center w3-padding-large">
+      <img src="counter4.jpeg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="SARS Virus" width="500" height="333">
+     </div>
+        <p style="font-size: 15px">Pemenuhan kebutuhan pokok masyarakat melalui bantuan tunai dan nontunai merupakan tindakan lanjutan dengan tujuan mendukung gerakan stay at home untuk meminimalisir penyebaran wabah SARS. Hal ini butuh koordinasi para kepala daerah, dimulai dari tingkat Rt/Rw dengan mendata kepala keluarga (KK) setempat lalu diserahkan kepada kelurahan. Data di kelurahan akan diserahkan ke kecamatan untuk diproses lebih lanjut sehingga data tersebut dapat sampai ke pemerintah kota/provinsi/pusat.</p>
     <li><h4>Penyuluhan tentang industri kreatif</h4></li>
-        <p style="font-size: 15px">Memberikan penyuluhan tentang industri kreatif untuk memaksimalkan sumber daya alam yang ada di daerah tersebut untuk mengurangi masuknya barang dari luar sehingga dapat meminimalisir penyebaran wabah SARS.</p>
+    <div class="w3-center w3-padding-large">
+      <img src="counterpain.jpeg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="SARS Virus" width="500" height="333">
+     </div>
+        <p style="font-size: 15px"> Penyuluhan tentang industri kreatif bertujuan untuk memaksimalkan sumber daya alam yang ada di daerah tersebut untuk mengurangi masuknya barang dari luar sehingga dapat meminimalisir penyebaran wabah SARS. Selain itu, penyuluhan mengenai industri kreatif dapat meningkatkan kualitas SDM sehingga dapat mencukupi kebutuhan hidupnya</p>
   </ol>
 </div>
   

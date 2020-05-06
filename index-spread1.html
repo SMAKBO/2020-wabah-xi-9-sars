@@ -117,33 +117,14 @@ body, html {
 
 <!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-64" id="about">
-  <b><h2 class="w3-text-blue-gray">Asal Mula Penyebaran Virus SARS</h2></b>
+  <b><h2 class="w3-text-blue-gray w3-center">Asal Mula Penyebaran Virus SARS</h2></b>
   <hr>
-  
-  <h2 class="w3-center"</h2>
 
 <div class="w3-content w3-section" style="max-width:500px">
   <img class="mySlides" src="spread2.jpeg" style="width:100%">
   <img class="mySlides" src="asal-1.jpg" style="width:100%">
   <img class="mySlides" src="asal-3.jpg" style="width:100%">
 </div>
-
-<script>
-var myIndex = 0;
-carousel();
-
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 2000); // Change image every 2 seconds
-}
-</script>
 
 <p>SARS coronavirus (SARS-CoV) diidentifikasi pada tahun 2003. SARS-CoV dianggap sebagai virus hewan dari reservoir hewan yang belum pasti, tapi mungkin berasal dari kelelawar yang menyebar ke hewan lain (kucing/musang) dan manusia yang terinfeksi pertama kali di provinsi Guandong, Cina Selatan pada tahun 2002 kemudian menyebar dengan cepat ke berbagai negara.</p>
 <p>Pada akhir Mei 2003, studi dari berbagai sampel binatang liar yang dijual sebagai makanan di pasar di Guandong, Tiongkok menunjukkan coronavirus SARS dapat diisolasikan dari kelelawar. Ini menunjukkan virus SARS dapat menembus pembatas spesies dari kelelawar, namun hasil ini belum pasti sehingga penelitian masih berlangsung. Menurut laporan yang dirilis WHO pada tahun 2003, ada sebanyak 8.098 orang di seluruh dunia yang terkena SARS dan 774 orang di antaranya meninggal dunia.</p> 
@@ -189,6 +170,22 @@ function myFunction() {
     } else {
         navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
     }
+}
+
+// SlideShow
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
 }
 
 // Used to toggle the menu on small screens when clicking on the menu button

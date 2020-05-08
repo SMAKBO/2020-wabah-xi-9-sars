@@ -15,7 +15,8 @@ body, html {
   line-height: 1.8;
 }
 
-.mySlides {display:none;}
+.mySlides {display: none;}
+
 /* Create a Parallax Effect */
 .bgimg-1 {
   background-attachment: fixed;
@@ -116,18 +117,17 @@ body, html {
 
 <!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-64" id="about">
-
- <b><h2 class="w3-text-blue-gray">Pencegahan SARS</h2></b>
+  <b><h2 class="w3-text-blue-gray">Pencegahan SARS</h2></b>
   <hr>
   
- <div class="w3-content w3-section" style="max-width:500px">
-        <img class="mySlides w3-animate-top" src="viruss1.jpg" style="width:100%">
-	<img class="mySlides w3-animate-bottom" src="viruss2.jpg" style="width:100%">
-	<img class="mySlides w3-animate-left" src="viruss4.jpg" style="width:100%">
-	<img class="mySlides w3-animate-top" src="viruss5.jpg" style="width:100%">
-	<img class="mySlides w3-animate-bottom" src="viruss6.jpg" style="width:100%">
-	<img class="mySlides w3-animate-right" src="viruss7.jpg" style="width:100%">
- </div>
+  <div class="w3-content w3-section" style="max-width:500px">
+    <img class="mySlides w3-animate-top" src="viruss1.jpg" style="width:100%">
+    <img class="mySlides w3-animate-bottom" src="viruss2.jpg" style="width:100%">
+    <img class="mySlides w3-animate-left" src="hviruss.jpg" style="width:100%">
+    <img class="mySlides w3-animate-top" src="viruss5.jpg" style="width:100%">
+    <img class="mySlides w3-animate-bottom" src="viruss6.jpg" style="width:100%">
+    <img class="mySlides w3-animate-right" src="viruss7.jpg" style="width:100%">
+  </div>
   
   <p>Ada beberapa cara yang dapat dilakukan untuk mencegah SARS, yaitu:
     <ul>
@@ -144,7 +144,7 @@ body, html {
     <li>Jangan berbagi penggunaan alat makan dan minum dengan orang lain, serta cuci pakaian terpisah dari pakaian orang lain.</li>
     <li>Rutin cuci tangan, terutama setelah menutup mulut dengan tangan saat bersin atau batuk dan setelah dari toilet.</li>
     </ul></p>
- <br>
+<br>
   <div class="w3-container">
       <p>Sumber:</p>
       <a href="https://www.alodokter.com/sars"><button class="w3-btn w3-black">1</button></a>
@@ -174,17 +174,17 @@ body, html {
 <script>
 var myIndex = 0;
 carousel();
-	
+
 function carousel() {
-        var i;
-	var x = document.getElementsbyClassName("mySlides");
-	for (i = 0; i < x.length; i++) {
-		x[i].style.display = "none";
-	}
-	myIndex++;
-	if (myIndex > x.length) {myIndex = 1}
-	x[myIndex-1].style.display = "block";
-	setTimeout(carousel, 2500);
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2500);    
 }
 	
 // Change style of navbar on scroll
